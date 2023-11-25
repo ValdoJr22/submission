@@ -26,6 +26,10 @@ submission
 | ├───day.csv
 | ├───hour.csv
 | └───Readme.txt
+├───screenshots
+| ├───streamlit_cloud_1.png
+| ├───streamlit_cloud_2.png
+| └───streamlit_cloud_3.png
 ├───notebook.ipynb
 └───README.md
 ```
