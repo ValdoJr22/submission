@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Import csv yang sudah dibersihkan
-day_df = pd.read_csv("./cleaned_day.csv", parse_dates=["dteday"])
-hour_df = pd.read_csv("./cleaned_hour.csv", parse_dates=["dteday"])
+day_df = pd.read_csv("submission/dashboard/cleaned_day.csv", parse_dates=["dteday"])
+hour_df = pd.read_csv("submission/dashboard/cleaned_hour.csv", parse_dates=["dteday"])
 
 # Membuat title dan header
 st.title("Proyek Analisis Data Dicoding")
@@ -14,7 +14,7 @@ st.header("Bike Sharing Dataset :bike:")
 min_date = day_df["dteday"].min()
 max_date = day_df["dteday"].max()
 with st.sidebar:
-    st.image("./bikelogo.jpg")
+    st.image("submission/dashboard/bikelogo.jpg")
     start_date, end_date = st.date_input(
         label="Rentang Waktu",
         min_value=min_date,
